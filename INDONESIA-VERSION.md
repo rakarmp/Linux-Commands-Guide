@@ -2,7 +2,7 @@
 
 Di bawah ini adalah daftar lengkap perintah dasar yang umum digunakan di terminal Linux. Perintah-perintah ini sangat penting untuk mengelola sistem, berinteraksi dengan file, dan melakukan berbagai tugas melalui antarmuka baris perintah.
 
-Navigasi ###
+### Navigasi
 
 1.  `pwd`: Menampilkan direktori kerja saat ini.
 2.  `ls`: Membuat daftar file dan direktori dalam direktori saat ini.
@@ -29,7 +29,7 @@ Navigasi ###
 5.  `cat`: Menampilkan isi file di terminal.
     - `cat [nama_file]`: Menampilkan isi file tertentu.
 
-Manipulasi File Teks ### Manipulasi File Teks
+### Manipulasi File Teks Manipulasi File Teks
 
 1.  `nano` atau `vim`: Mengedit file teks di terminal.
 2.  `echo`: Menampilkan teks di terminal atau menyimpannya ke file.
@@ -37,7 +37,7 @@ Manipulasi File Teks ### Manipulasi File Teks
     - `echo [teks] > [nama_file]`: Menyimpan teks ke file (menimpa konten).
     - `echo [teks] >> [nama_file]`: Menambahkan teks ke file (tanpa menimpa).
 
-Informasi Sistem ### Informasi Sistem
+### Informasi Sistem Informasi Sistem
 
 1.  `uname`: Menampilkan informasi tentang sistem.
     - `uname -a`: Menampilkan informasi sistem secara rinci.
