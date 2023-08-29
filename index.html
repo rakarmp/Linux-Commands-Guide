@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="assets/images/logo.png" rel="icon" />
+    <title>Linux Commands Guide</title>
+    <meta name="description" content="Linux Commands Guide - Your Ultimate Guide to Linux Package Management">
+    <meta name="author" content="Zyarexx">
+
+    <!-- Stylesheet
+============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+    <!-- Highlight Syntax -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Document Wrapper   
+=============================== -->
+    <div id="main-wrapper">
+
+        <!-- Header
+  ============================ -->
+        <header id="header" class="sticky-top">
+            <!-- Navbar -->
+            <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+                <div class="container-fluid">
+                    <!-- Sidebar Toggler -->
+                    <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none"
+                        type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+
+                    <!-- Logo -->
+                    <a class="logo ml-md-3" href="index.html" title="guide"><img src="assets/images/logo_fix.png" /></a>
+                    <!-- Logo End -->
+
+                    <!-- Navbar Toggler -->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#header-nav"><span></span><span></span><span></span></button>
+
+                    <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+                        <li class="social-icons-twitter"><a data-toggle="tooltip"
+                                href="http://www.twitter.com/harnishdesign/" target="_blank" title=""
+                                data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-icons-facebook"><a data-toggle="tooltip"
+                                href="http://www.facebook.com/harnishdesign/" target="_blank" title=""
+                                data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-icons-dribbble"><a data-toggle="tooltip"
+                                href="http://www.dribbble.com/harnishdesign/" target="_blank" title=""
+                                data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+        </header>
+        <!-- Header End -->
+
+        <!-- Content
+  ============================ -->
+        <div id="content" role="main">
+
+            <!-- Sidebar Navigation
+	============================ -->
+            <div class="idocs-navigation bg-light">
+                <ul class="nav flex-column ">
+                    <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#terminal_commands">Terminal Commands</a>
+                            </li>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+
+            <!-- Docs Content
+	============================ -->
+            <div class="idocs-content">
+                <div class="container">
+
+                    <!-- Getting Started
+		============================ -->
+                    <section id="idocs_start">
+                        <h1>Linux Commands Guide</h1>
+                        <h2>Your Ultimate Guide to Linux Package Management</h2>
+
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Installation
+		============================ -->
+                    <section id="terminal_commands">
+                        <h2>Basic Linux Terminal Commands</h2>
+                        <p class="lead">Below is a comprehensive list of commonly used basic commands in the Linux
+                            terminal. These commands are essential for managing the system, interacting with files, and
+                            performing various tasks through the command-line interface.</p>
+                        <h3>Navigation</h3>
+                        <ol>
+                            <li><code>pwd</code>: Display the current working directory.</li>
+                            <li><code>ls</code>: List files and directories in the current directory.
+                                <ul>
+                                    <li><code>ls -l</code>: Display file/directory information in long format.
+                                    <li><code>ls -a</code>: Display all files/directories, including hidden ones.</li>
+                                    <!-- <li><code>HTML/images</code> - Images files</li>
+                                    <li><code>HTML/js</code> - Javacript files</li>
+                                    <li><code>HTML/sass</code> - Sass files</li>
+                                    <li><code>HTML/vendor</code> – All external libs.</li> -->
+                            </li>
+                            </ul>
+                            </li>
+                            <li><code>cd</code>: Change directory.
+                                <ul>
+                                    <li><code>cd [directory_name]</code>: Move to the specified directory.</li>
+                                    <li><code>cd ..</code>: Move to the parent directory.</li>
+                                    <li><code>cd ~</code>: Move to the user's home directory.</li>
+                                </ul>
+                            </li>
+                            <li><code>mkdir</code>: Create a new directory.
+                                <ul>
+                                    <li><code>mkdir [directory_name]</code>: Create a directory with a specific name.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <h3>Files and Directories</h3>
+                        <ol>
+                            <li><code>touch</code>: Create an empty file.
+                                <ul>
+                                    <li><code>touch [file_name]</code>: Create a file with a specific name.</li>
+                                </ul>
+                            </li>
+                            <li><code>cp</code>: Copy files/directories.
+                                <ul>
+                                    <li><code>cp [source] [destination]</code>: Copy source to destination.</li>
+                                </ul>
+                            </li>
+                            <li><code>mv</code>: Move or rename files/directories.
+                                <ul>
+                                    <li><code>mv [source] [destination]</code>: Move source to destination.</li>
+                                    <li><code>mv [old_name] [new_name]</code>: Rename a file/directory.</li>
+                                </ul>
+                            </li>
+                            <li><code>rm</code>: Delete files/directories.
+                                <ul>
+                                    <li><code>rm [file_name]</code>: Delete a file with a specific name.</li>
+                                    <li><code>rm -r [directory_name]</code>: Delete a directory and its contents
+                                        recursively.</li>
+                                </ul>
+                            </li>
+                            <li><code>cat</code>: Display the contents of a file in the terminal.
+                                <ul>
+                                    <li><code>cat [file_name]</code>: Display the contents of a specific file.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <h3>Text File Manipulation</h3>
+                        <ol>
+                            <li><code>nano</code> or <code>vim</code>: Edit text files in the terminal.</li>
+                            <li><code>echo</code>: Display text in the terminal or save it to a file.
+                                <ul>
+                                    <li><code>echo [text]</code>: Display text in the terminal.</li>
+                                    <li><code>echo [text] > [file_name]</code>: Save text to a file (overwrite content).
+                                    </li>
+                                    <li><code>echo [text] >> [file_name]</code>: Append text to a file (without
+                                        overwriting).</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <h3>System Information</h3>
+                        <ol>
+                            <li><code>uname</code>: Display information about the system.
+                                <ul>
+                                    <li><code>uname -a</code>: Display detailed system information.</li>
+                                </ul>
+                            </li>
+                            <li><code>top</code>: Display a list of running processes.</li>
+                            <li><code>free</code>: Display memory usage.</li>
+                            <li><code>df</code>: Display disk space usage information.</li>
+                        </ol>
+                        <h3>User and Permission Management</h3>
+                        <ol>
+                            <li><code>sudo</code>: Execute commands as a superuser (root).</li>
+                            <li><code>useradd</code>: Add a new user.</li>
+                            <li><code>passwd</code>: Change a user's password.</li>
+                            <li><code>chmod</code>: Change file/directory permissions.</li>
+                            <li><code>chown</code>: Change file/directory ownership.</li>
+                        </ol> Linux Commands Guide &nbsp;
+                        <h3>Networking</h3>
+                        <ol>
+                            <li><code>ping</code>: Send ICMP echo packets to a network address.
+                                <ul>
+                                    <li><code>ping [ip_address]</code>: Send ping packets to an IP address.</li>
+                                </ul>
+                            </li>
+                            <li><code>ifconfig</code> or <code>ip</code>: Display network interface information.</li>
+                            <li><code>ssh</code>: Access a remote machine using Secure Shell (SSH).
+                                <ul>
+                                    <li><code>ssh [username]@[ip_address]</code>: Connect to a remote machine.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <hr class="divider">
+
+                    <section id="ubuntu/debian">
+                        <div align="center">
+                            <samp>next update...</samp>
+                        </div>
+                    </section>
+
+                    <!-- HTML Structure
+		============================ -->
+                    <!-- <section id="idocs_html_structure">
+                        <h2>HTML Structure</h2>
+                        <p>iDocs follows a simple and easy to customize coding structure. Here is the sample for your
+                            reference:<br>
+                            The template is based on <a class="ml-1" target="_blank" href="https://getbootstrap.com/"><i
+                                    class="fas fa-external-link-alt"></i> Bootstrap Framework</a></p>
+                        <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+
+&lt;!-- Your Title, Description, Stylesheets
+============================================= --&gt;
+
+&lt;/head&gt;
+
+&lt;body data-spy=&quot;scroll&quot; data-target=&quot;.idocs-navigation&quot; data-offset=&quot;125&quot;&gt;
+
+&lt;!-- Document Wrapper   
+=============================== --&gt;
+&lt;div id=&quot;main-wrapper&quot;&gt; 
+  
+  &lt;!-- Header
+  ============================ --&gt;
+  &lt;header id=&quot;header&quot; class=&quot;sticky-top&quot;&gt;
+   ......
+  &lt;/header&gt;
+  &lt;!-- Header End --&gt; 
+  
+  &lt;!-- Content
+  ============================ --&gt;
+  &lt;div id=&quot;content&quot; role=&quot;main&quot;&gt; 
+    
+    &lt;!-- Sidebar Navigation
+    ============================ --&gt;
+    &lt;div class=&quot;idocs-navigation bg-light&quot;&gt;
+     .....
+    &lt;/div&gt;
+    
+    &lt;!-- Docs Content
+    ============================ --&gt;
+    &lt;div class=&quot;idocs-content&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        .......
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Content end --&gt; 
+  
+  &lt;!-- Footer --&gt;
+  &lt;footer id=&quot;footer&quot; class=&quot;section bg-dark footer-text-light&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt; ...... &lt;/div&gt;
+  &lt;/footer&gt;
+  &lt;!-- Footer end --&gt; 
+  
+&lt;/div&gt;
+&lt;!-- Document Wrapper end --&gt; 
+
+&lt;!-- JavaScript --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                    </section> -->
+
+                    <hr class="divider">
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Content end -->
+
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back To Top -->
+    <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+            class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript
+============================ -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Highlight JS -->
+    <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+    <!-- Easing -->
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
