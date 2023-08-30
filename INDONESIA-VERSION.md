@@ -17,7 +17,7 @@ Di bawah ini adalah daftar lengkap perintah dasar yang umum digunakan di termina
 
 ### File dan Direktori
 
-1.  `touch`: Membuat file kosong. - 2. `sentuh [nama_file]`: Membuat file dengan nama tertentu.
+1.  `touch`: Membuat file kosong. - 2. `touch [nama_file]`: Membuat file dengan nama tertentu.
 2.  `cp`: Menyalin file/direktori.
     - `cp [sumber] [tujuan]`: Menyalin sumber ke tujuan.
 3.  `mv`: Memindahkan atau mengganti nama file/direktori.
