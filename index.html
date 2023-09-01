@@ -77,7 +77,7 @@
             <!-- Sidebar Navigation
 	============================ -->
             <div class="idocs-navigation bg-light">
-                <ul class="nav flex-column ">
+                <!-- <ul class="nav flex-column ">
                     <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
                         <ul class="nav flex-column">
                             <li class="nav-item"><a class="nav-link" href="#terminal_commands">Terminal Commands</a>
@@ -86,8 +86,63 @@
                             </li>
                             <li class="nav-item"><a class="nav-link" href="#arch">Arch Linux</a>
                             </li>
+                            <li class="nav-item"><a class="nav-link" href="#rhel">RHEL/CentOS/Fedora</a>
+                            </li>
                         </ul>
                     </li>
+                </ul> -->
+                <ul class="nav flex-column ">
+                    <li class="nav-item"><a class="nav-link active" href="#idocs_start">Terminal Commands Guide</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#navigation">Navigation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#files_and_directories">Files And
+                                    Directories</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#text_file_manipulation">Text File
+                                    Manipulation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#system_information">System Information</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#user_and_permission_management">User And
+                                    Permission Management</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#networking">Networking</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#ubuntu_debian">Ubuntu/Debian</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#update_package_lists">Update Package
+                                    Lists</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#install_packages">Install Packages</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#remove_packages">Remove Packages</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#upgrade_packages">Upgrade Packages</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#search_for_packages">Search For Packages</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#show_package_information">Show Package
+                                    Information</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="#additional_package_management_tools">Additional Package Management Tools</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#arch">Arch</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#update_package_database_arch">Update Package
+                                    Database</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#install_packages_arch">Install Packages</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#remove_packages_arch">Remove Packages</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#upgrade_packages_arch">Upgrade Packages</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#show_package_information_arch">Show Package
+                                    Information</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#additional_tools_arch">Additional Tools</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#managing_pacman_hooks_arch">Managing Pacman
+                                    Hooks</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
             </div>
 
@@ -113,111 +168,120 @@
                     <p class="lead">Below is a comprehensive list of commonly used basic commands in the Linux
                         terminal. These commands are essential for managing the system, interacting with files, and
                         performing various tasks through the command-line interface.</p>
-                    <h3>Navigation</h3>
-                    <ol>
-                        <li><code>pwd</code>: Display the current working directory.</li>
-                        <li><code>ls</code>: List files and directories in the current directory.
-                            <ul>
-                                <li><code>ls -l</code>: Display file/directory information in long format.
-                                <li><code>ls -a</code>: Display all files/directories, including hidden ones.</li>
-                                <!-- <li><code>HTML/images</code> - Images files</li>
-                                    <li><code>HTML/js</code> - Javacript files</li>
-                                    <li><code>HTML/sass</code> - Sass files</li>
-                                    <li><code>HTML/vendor</code> – All external libs.</li> -->
-                        </li>
-                        </ul>
-                        </li>
-                        <li><code>cd</code>: Change directory.
-                            <ul>
-                                <li><code>cd [directory_name]</code>: Move to the specified directory.</li>
-                                <li><code>cd ..</code>: Move to the parent directory.</li>
-                                <li><code>cd ~</code>: Move to the user's home directory.</li>
+                    <section id="navigation">
+                        <h3>Navigation</h3>
+                        <ol>
+                            <li><code>pwd</code>: Display the current working directory.</li>
+                            <li><code>ls</code>: List files and directories in the current directory.
+                                <ul>
+                                    <li><code>ls -l</code>: Display file/directory information in long format.
+                                    <li><code>ls -a</code>: Display all files/directories, including hidden ones.</li>
+
+                            </li>
                             </ul>
-                        </li>
-                        <li><code>mkdir</code>: Create a new directory.
-                            <ul>
-                                <li><code>mkdir [directory_name]</code>: Create a directory with a specific name.
-                                </li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h3>Files and Directories</h3>
-                    <ol>
-                        <li><code>touch</code>: Create an empty file.
-                            <ul>
-                                <li><code>touch [file_name]</code>: Create a file with a specific name.</li>
-                            </ul>
-                        </li>
-                        <li><code>cp</code>: Copy files/directories.
-                            <ul>
-                                <li><code>cp [source] [destination]</code>: Copy source to destination.</li>
-                            </ul>
-                        </li>
-                        <li><code>mv</code>: Move or rename files/directories.
-                            <ul>
-                                <li><code>mv [source] [destination]</code>: Move source to destination.</li>
-                                <li><code>mv [old_name] [new_name]</code>: Rename a file/directory.</li>
-                            </ul>
-                        </li>
-                        <li><code>rm</code>: Delete files/directories.
-                            <ul>
-                                <li><code>rm [file_name]</code>: Delete a file with a specific name.</li>
-                                <li><code>rm -r [directory_name]</code>: Delete a directory and its contents
-                                    recursively.</li>
-                            </ul>
-                        </li>
-                        <li><code>cat</code>: Display the contents of a file in the terminal.
-                            <ul>
-                                <li><code>cat [file_name]</code>: Display the contents of a specific file.</li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h3>Text File Manipulation</h3>
-                    <ol>
-                        <li><code>nano</code> or <code>vim</code>: Edit text files in the terminal.</li>
-                        <li><code>echo</code>: Display text in the terminal or save it to a file.
-                            <ul>
-                                <li><code>echo [text]</code>: Display text in the terminal.</li>
-                                <li><code>echo [text] > [file_name]</code>: Save text to a file (overwrite content).
-                                </li>
-                                <li><code>echo [text] >> [file_name]</code>: Append text to a file (without
-                                    overwriting).</li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <h3>System Information</h3>
-                    <ol>
-                        <li><code>uname</code>: Display information about the system.
-                            <ul>
-                                <li><code>uname -a</code>: Display detailed system information.</li>
-                            </ul>
-                        </li>
-                        <li><code>top</code>: Display a list of running processes.</li>
-                        <li><code>free</code>: Display memory usage.</li>
-                        <li><code>df</code>: Display disk space usage information.</li>
-                    </ol>
-                    <h3>User and Permission Management</h3>
-                    <ol>
-                        <li><code>sudo</code>: Execute commands as a superuser (root).</li>
-                        <li><code>useradd</code>: Add a new user.</li>
-                        <li><code>passwd</code>: Change a user's password.</li>
-                        <li><code>chmod</code>: Change file/directory permissions.</li>
-                        <li><code>chown</code>: Change file/directory ownership.</li>
-                    </ol>
-                    <h3>Networking</h3>
-                    <ol>
-                        <li><code>ping</code>: Send ICMP echo packets to a network address.
-                            <ul>
-                                <li><code>ping [ip_address]</code>: Send ping packets to an IP address.</li>
-                            </ul>
-                        </li>
-                        <li><code>ifconfig</code> or <code>ip</code>: Display network interface information.</li>
-                        <li><code>ssh</code>: Access a remote machine using Secure Shell (SSH).
-                            <ul>
-                                <li><code>ssh [username]@[ip_address]</code>: Connect to a remote machine.</li>
-                            </ul>
-                        </li>
-                    </ol>
+                            </li>
+                            <li><code>cd</code>: Change directory.
+                                <ul>
+                                    <li><code>cd [directory_name]</code>: Move to the specified directory.</li>
+                                    <li><code>cd ..</code>: Move to the parent directory.</li>
+                                    <li><code>cd ~</code>: Move to the user's home directory.</li>
+                                </ul>
+                            </li>
+                            <li><code>mkdir</code>: Create a new directory.
+                                <ul>
+                                    <li><code>mkdir [directory_name]</code>: Create a directory with a specific name.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <section id="files_and_directories">
+                        <h3>Files and Directories</h3>
+                        <ol>
+                            <li><code>touch</code>: Create an empty file.
+                                <ul>
+                                    <li><code>touch [file_name]</code>: Create a file with a specific name.</li>
+                                </ul>
+                            </li>
+                            <li><code>cp</code>: Copy files/directories.
+                                <ul>
+                                    <li><code>cp [source] [destination]</code>: Copy source to destination.</li>
+                                </ul>
+                            </li>
+                            <li><code>mv</code>: Move or rename files/directories.
+                                <ul>
+                                    <li><code>mv [source] [destination]</code>: Move source to destination.</li>
+                                    <li><code>mv [old_name] [new_name]</code>: Rename a file/directory.</li>
+                                </ul>
+                            </li>
+                            <li><code>rm</code>: Delete files/directories.
+                                <ul>
+                                    <li><code>rm [file_name]</code>: Delete a file with a specific name.</li>
+                                    <li><code>rm -r [directory_name]</code>: Delete a directory and its contents
+                                        recursively.</li>
+                                </ul>
+                            </li>
+                            <li><code>cat</code>: Display the contents of a file in the terminal.
+                                <ul>
+                                    <li><code>cat [file_name]</code>: Display the contents of a specific file.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <section id="text_file_manipulation">
+                        <h3>Text File Manipulation</h3>
+                        <ol>
+                            <li><code>nano</code> or <code>vim</code>: Edit text files in the terminal.</li>
+                            <li><code>echo</code>: Display text in the terminal or save it to a file.
+                                <ul>
+                                    <li><code>echo [text]</code>: Display text in the terminal.</li>
+                                    <li><code>echo [text] > [file_name]</code>: Save text to a file (overwrite content).
+                                    </li>
+                                    <li><code>echo [text] >> [file_name]</code>: Append text to a file (without
+                                        overwriting).</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <section id="system_information">
+                        <h3>System Information</h3>
+                        <ol>
+                            <li><code>uname</code>: Display information about the system.
+                                <ul>
+                                    <li><code>uname -a</code>: Display detailed system information.</li>
+                                </ul>
+                            </li>
+                            <li><code>top</code>: Display a list of running processes.</li>
+                            <li><code>free</code>: Display memory usage.</li>
+                            <li><code>df</code>: Display disk space usage information.</li>
+                        </ol>
+                    </section>
+                    <section id="user_and_permission_management">
+                        <h3>User and Permission Management</h3>
+                        <ol>
+                            <li><code>sudo</code>: Execute commands as a superuser (root).</li>
+                            <li><code>useradd</code>: Add a new user.</li>
+                            <li><code>passwd</code>: Change a user's password.</li>
+                            <li><code>chmod</code>: Change file/directory permissions.</li>
+                            <li><code>chown</code>: Change file/directory ownership.</li>
+                        </ol>
+                    </section>
+                    <section id="networking">
+                        <h3>Networking</h3>
+                        <ol>
+                            <li><code>ping</code>: Send ICMP echo packets to a network address.
+                                <ul>
+                                    <li><code>ping [ip_address]</code>: Send ping packets to an IP address.</li>
+                                </ul>
+                            </li>
+                            <li><code>ifconfig</code> or <code>ip</code>: Display network interface information.</li>
+                            <li><code>ssh</code>: Access a remote machine using Secure Shell (SSH).
+                                <ul>
+                                    <li><code>ssh [username]@[ip_address]</code>: Connect to a remote machine.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
                 </section>
 
                 <hr class="divider">
@@ -226,15 +290,21 @@
                     <h2>Ubuntu/Debian</h2>
                     <p class="lead">APT is the default package management tool for Ubuntu and Debian systems. It
                         simplifies software management by handling package dependencies and updates.</p>
-                    <h4>Update Package Lists</h4>
-                    <p>To ensure you have the latest package information, update the package lists:</p>
-                    <li><code>sudo apt update</code></li>
-                    </br>
-                    <h4>Install Packages</h3>
-                        <p>To install a package, use the <code>apt install</code> command followed by the package name:
-                        </p>
-                        <li><code>sudo apt install [package_name]</code></li>
+                    <section id="update_package_lists">
+                        <h4>Update Package Lists</h4>
+                        <p>To ensure you have the latest package information, update the package lists:</p>
+                        <li><code>sudo apt update</code></li>
                         </br>
+                    </section>
+                    <section id="install_packages">
+                        <h4>Install Packages</h3>
+                            <p>To install a package, use the <code>apt install</code> command followed by the package
+                                name:
+                            </p>
+                            <li><code>sudo apt install [package_name]</code></li>
+                            </br>
+                    </section>
+                    <section id="remove_packages">
                         <h4>Remove Packages</h4>
                         <p>To remove a package (while keeping configuration files):</p>
                         <li><code>sudo apt remove [package_name]</code></li>
@@ -242,6 +312,8 @@
                         <p>To remove a package and its configuration files:</p>
                         <li><code>sudo apt purge [package_name]</code></li>
                         </br>
+                    </section>
+                    <section id="upgrade_packages">
                         <h4>Upgrade Packages</h4>
                         <p>To upgrade all installed packages:</p>
                         <li><code>sudo apt upgrade</code></li>
@@ -249,45 +321,146 @@
                         <p>To perform a full system upgrade (including kernel upgrades):</p>
                         <li><code>sudo apt full-upgrade</code></li>
                         </br>
+                    </section>
+                    <section id="search_for_packages">
                         <h4>Search for Packages</h4>
                         <p>To search for packages by name:</p>
                         <li><code>apt search [search_term]</code></li>
                         </br>
+                    </section>
+                    <section id="show_package_information">
                         <h4>Show Package Information</h2>
                             <p>To display detailed information about a package:</p>
                             <li><code>apt show [package_name]</code></li>
                             </br>
-                </section>
+                    </section>
 
-                <h3>Additional Package Management Tools</h3>
-                <h4>dpkg</h4>
-                <p>The <code>dpkg</code> command is a lower-level package manager that <code>apt</code> relies
-                    on. It can be used to
-                    directly manipulate <code>.deb</code> packages.</p>
-                <p>To install a <code>.deb</code> package:</p>
-                <li><code>sudo dpkg -i [package_file.deb]</code></li>
-                </br>
-                <h4>Synaptic Package Manager</h4>
-                <p>Synaptic provides a graphical user interface for package management. Install it using:</p>
-                <li><code>sudo apt install synaptic</code></li>
-                </br>
-                <h4>Aptitude</h4>
-                <p>Aptitude is another command-line package manager that provides more advanced package
-                    management capabilities:</p>
-                <p>To install Aptitude:</p>
-                <li><code>sudo apt install aptitude</code></li>
-                </br>
-                <p>To install a package:</p>
-                <li><code>sudo aptitude install [package_name]</code></li>
-                </br>
-                <samp>These commands should cover the basics of package management in Ubuntu and Debian-based
-                    systems. Remember to use <code>sudo</code> to execute commands as a superuser when
-                    required.</samp>
+                    <section id="additional_package_management_tools">
+                        <h3>Additional Package Management Tools</h3>
+                        <h4>dpkg</h4>
+                        <p>The <code>dpkg</code> command is a lower-level package manager that <code>apt</code> relies
+                            on. It can be used to
+                            directly manipulate <code>.deb</code> packages.</p>
+                        <p>To install a <code>.deb</code> package:</p>
+                        <li><code>sudo dpkg -i [package_file.deb]</code></li>
+                        </br>
+                        <h4>Synaptic Package Manager</h4>
+                        <p>Synaptic provides a graphical user interface for package management. Install it using:</p>
+                        <li><code>sudo apt install synaptic</code></li>
+                        </br>
+                        <h4>Aptitude</h4>
+                        <p>Aptitude is another command-line package manager that provides more advanced package
+                            management capabilities:</p>
+                        <p>To install Aptitude:</p>
+                        <li><code>sudo apt install aptitude</code></li>
+                        </br>
+                        <p>To install a package:</p>
+                        <li><code>sudo aptitude install [package_name]</code></li>
+                        </br>
+                    </section>
+                    <samp>These commands should cover the basics of package management in Ubuntu and Debian-based
+                        systems. Remember to use <code>sudo</code> to execute commands as a superuser when
+                        required.</samp>
                 </section>
 
                 <hr class="divider">
                 <section id="arch">
                     <h2>Arch Linux</h2>
+                    <p class="lead">
+                        Pacman is a powerful package manager designed for Arch Linux and its derivatives.
+                    </p>
+                    <section id="update_package_database_arch">
+                        <h4>Update Package Database</h4>
+                        <p>To ensure you have the latest package information, update the package database:</p>
+                        <li><code>sudo pacman -Sy</code></li>
+                        </br>
+                    </section>
+                    <section id="install_packages_arch">
+                        <h4>Install Packages</h4>
+                        <p>To install a package, use the <code>pacman -S</code> command followed by the package name:
+                        </p>
+                        <li><code>sudo pacman -S [package_name]</code></li>
+                        </br>
+                    </section>
+                    <section id="remove_packages_arch">
+                        <h4>Remove Packages</h4>
+                        <p>To remove a package (while keeping configuration files):</p>
+                        <li><code>sudo pacman -R [package_name]</code></li>
+                        </br>
+                        <p>To remove a package and its configuration files:</p>
+                        <li><code>sudo pacman -Rs [package_name]</code></li>
+                        </br>
+                        <p>To remove a package and its unused dependencies:</p>
+                        <li><code>sudo pacman -Rns [package_name]</code></li>
+                        </br>
+                    </section>
+                    <section id="upgrade_packages_arch">
+                        <h4>Upgrade Packages</h4>
+                        <p>To upgrade all installed packages:</p>
+                        <li><code>sudo pacman -Syu</code></li>
+                        </br>
+                    </section>
+                    <section id="search_for_packages_arch">
+                        <h4>Search for packages</h4>
+                        <p>To search for packages by name or description:</p>
+                        <li><code>pacman -Ss [search_term]</code></li>
+                        </br>
+                    </section>
+                    <section id="show_package_information_arch">
+                        <h4>Show Package Information</h4>
+                        <p>To display detailed information about a package:</p>
+                        <li><code>pacman -Si [package_name]</code></li>
+                        </br>
+                    </section>
+                    <section id="additional_tools_arch">
+                        <h3>Additional Tools</h3>
+                        <h4>Yaourt (Deprecated)</h4>
+                        <p>While not recommended due to security concerns, Yaourt was a popular AUR helper. If you still
+                            use
+                            it, the commands are:</p>
+                        <p>To install a package from the AUR:</p>
+                        <li><code>yaourt -S [package_name]</code></li>
+                        </br>
+                        <h4>Yay</h4>
+                        <p>Yay is a popular and community-driven AUR helper</p>
+                        <p>To install a package from the AUR using yay:</p>
+                        <li><code>yay -S [package_name]</code></li>
+                        </br>
+                        <h3>AUR (Arch User Repository)</h3>
+                        <p class="lead">The AUR contains user-contributed packages not found in official repositories.
+                        </p>
+                        <h4>Building AUR Packages</h4>
+                        <p>To build and install a package from the AUR using <code>makepkg</code>:</p>
+                        <ol>
+                            <ul>
+                                <li>Download the AUR package source.</li>
+                                <li>Extract the source and navigate to the package directory.</li>
+                                <li>Build the package:
+                                    <ul>
+                                        <li><code>makepkg -si</code></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ol>
+                    </section>
+                    <section id="managing_pacman_hooks_arch">
+                        <h3>Managing Pacman Hooks</h3>
+                        <p class="lead">Pacman hooks are scripts that run at specific points during package installation
+                            and
+                            removal. Hooks can be found in <code>/usr/share/libalpm/hooks/</code>.</p>
+                        <h3>Keep Your System Updated</h3>
+                        <p>Regularly update your system to ensure security and stability:</p>
+                        <li><code>sudo pacman -Syu</code></li>
+                        </br>
+                    </section>
+                    <samp>These commands should help you manage packages efficiently on your Arch Linux system. Remember
+                        to use <code>sudo</code> to execute commands as a superuser when required.</samp>
+                </section>
+
+                <hr class="divider">
+
+                <section id="rhel">
+                    <h2>RHEL, CentOS, Fedora</h2>
                     <samp>Next Update ...</samp>
                 </section>
 
