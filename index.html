@@ -142,6 +142,34 @@
                                     Hooks</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="#rhel">RHEL, CentOS, Fedora</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#dnf_basics_rhel">DNF Basics</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#update_package_database_rhel">Update Package
+                                    Database</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#install_packages_rhel">Install Packages</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#remove_packages_rhel">Remove Packages</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#upgrade_packages_rhel">Upgrade Packages</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#search_for_packages_rhel">Search For
+                                    Packages</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#show_package_information_rhel">Show Package
+                                    Information</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#additional_dnf_commands_rhel">Additional DNF
+                                    Commands</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#rpm_fusion_repository">RPM Fusion
+                                    Repository</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#managing_dnf_plugins">Managing DNF
+                                    Plugins</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#keep_your_system_updated">Keep Your System
+                                    Updated</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#opensuse">openSUSE</a></li>
 
                 </ul>
             </div>
@@ -461,6 +489,102 @@
 
                 <section id="rhel">
                     <h2>RHEL, CentOS, Fedora</h2>
+                    <p class="lead">Red Hat Enterprise Linux (RHEL), CentOS, and Fedora use the DNF package manager for
+                        handling software installation, updates, and removal.</p>
+                    <section id="dnf_basics_rhel">
+                        <h3>DNF Basics</h3>
+                        <p>DNF (Dandified Yum) is a package manager designed for RHEL, CentOS, Fedora, and related
+                            distributions.</p>
+                    </section>
+                    <section id="update_package_database_rhel">
+                        <h4>Update package database</h4>
+                        <p>To ensure you have the latest package information, update the package database:</p>
+                        <li><code>sudo dnf update</code></li>
+                        <br>
+                    </section>
+                    <section id="install_packages_rhel">
+                        <h4>Install packages</h4>
+                        <p>To install a package, use the<code>dnf install</code>command followed by the package name:
+                        </p>
+                        <li><code>sudo dnf install [package_name]</code></li>
+                        <br>
+                    </section>
+                    <section id="remove_packages_rhel">
+                        <h4>Remove packages</h4>
+                        <p>To remove a package:</p>
+                        <li><code>sudo dnf remove [package_name]</code></li>
+                        <br>
+                    </section>
+                    <section id="upgrade_packages_rhel">
+                        <h4>Upgrade packages</h4>
+                        <p>To upgrade all installed packages</p>
+                        <li><code>sudo dnf upgrade</code></li>
+                        <br>
+                    </section>
+                    <section id="search_for_packages_rhel">
+                        <h4>Search for packages</h4>
+                        <p>To search for packages by name:</p>
+                        <li><code>dnf search [search_term]</code></li>
+                        <br>
+                    </section>
+                    <section id="show_package_information_rhel">
+                        <h4>Show package information</h4>
+                        <p>To display detailed information about a package:</p>
+                        <li><code>dnf info [package_name]</code></li>
+                        <br>
+                    </section>
+                    <section id="additional_dnf_commands_rhel">
+                        <h3>Additional DNF Commands</h3>
+                        <h4>Group Management</h4>
+                        <p>DNF can also manage package groups. To install a package group:</p>
+                        <li><code>sudo dnf groupinstall [group_name]</code></li>
+                        <br>
+                        <h4>Repositories</h4>
+                        <p>To list enabled repositories</p>
+                        <li><code>dnf repolist</code></li>
+                        <br>
+                        <h4>Cleaning</h4>
+                        <p>To clean package cache and free up space:</p>
+                        <li><code>sudo dnf clean all</code></li>
+                        <br>
+                    </section>
+                    <section id="rpm_fusion_repository">
+                        <h3>RPM Fusion Repository</h3>
+                        <p>RPM Fusion is a third-party repository that provides additional packages for Fedora-based
+                            distributions. To enable it:</p>
+                        <li><code>sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm</code>
+                        </li>
+                        <br>
+                        <li><code>sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm</code>
+                        </li>
+                        <br>
+                    </section>
+                    <section id="managing_dnf_plugins">
+                        <h3>Managing DNF Plugins</h3>
+                        <p>DNF has several plugins that provide additional functionalities. Some commonly used ones
+                            include:</p>
+                        <ol>
+                            <ul>
+                                <li><code>dnf-automatic</code>: Automatically updates the system.</li>
+                                <li><code>dnf-plugin-system-upgrade</code>: Supports system upgrades.</li>
+                            </ul>
+                        </ol>
+                    </section>
+                    <section id="keep_your_system_updated">
+                        <h3>Keep Your System Updated</h3>
+                        <p>Regularly update your system to ensure security and stability:</p>
+                        <li><code>sudo dnf upgrade</code></li>
+                        <br>
+                    </section>
+                    <samp>These commands should help you manage packages efficiently on your RHEL, CentOS, or Fedora
+                        system. Remember to use <code>sudo</code> to execute commands as a superuser when
+                        required.</samp>
+                </section>
+
+                <hr class="divider">
+
+                <section id="opensuse">
+                    <h3>openSUSE</h3>
                     <samp>Next Update ...</samp>
                 </section>
 
