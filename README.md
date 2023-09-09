@@ -9,6 +9,12 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=rakarmp/Linux-Commands-Guide&type=Date)](https://star-history.com/#rakarmp/Linux-Commands-Guide&Date)
+<a href="https://star-history.com/#rakarmp/Linux-Commands-Guide&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=rakarmp/Linux-Commands-Guide&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=rakarmp/Linux-Commands-Guide&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=rakarmp/Linux-Commands-Guide&type=Date" />
+  </picture>
+</a>
 
 <sup>Handcraft ❤️ by rakarmp</sup>
