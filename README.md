@@ -4,7 +4,7 @@
      <p>Linux Commands Guide - Your Ultimate Guide to Linux Package Management</p>
    </div>
 
-   <h4><a href="https://rakarmp.github.io/Linux-Commands-Guide/">👏 Let's Start Guide</a></h4>
+   <h4><a href="https://rakarmp.github.io/Linux-Commands-Guide/" target="_blank">👏 Let's Start Guide</a></h4>
 </div>
 
 ## Star History
