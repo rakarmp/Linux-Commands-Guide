@@ -169,8 +169,29 @@
                                     Updated</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#opensuse">openSUSE</a></li>
-
+                    <li class="nav-item"><a class="nav-link" href="#opensuse">openSUSE</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a href="#zypper_basics" class="nav-link">zypper basics</a></li>
+                            <li class="nav-item"><a href="#update_package_database_opensuse" class="nav-link">Update
+                                    Package Database</a></li>
+                            <li class="nav-item"><a href="#install_packages_opensuse" class="nav-link">Install
+                                    Packages</a></li>
+                            <li class="nav-item"><a href="#remove_packages_opensuse" class="nav-link">Remove
+                                    Packages</a></li>
+                            <li class="nav-item"><a href="#upgrade_packages_opensuse" class="nav-link">Upgrade
+                                    Packages</a></li>
+                            <li class="nav-item"><a href="#search_for_packages_opensuse" class="nav-link">Search For
+                                    Packages</a></li>
+                            <li class="nav-item"><a href="#show_package_information_opensuse" class="nav-link">Show
+                                    Package Information</a></li>
+                            <li class="nav-item"><a href="#additional_zypper_commands" class="nav-link">Additional
+                                    Zypper Commands</a></li>
+                            <li class="nav-item"><a href="#yast" class="nav-link">YaST (Yet another Setup Tool)</a></li>
+                            <li class="nav-item"><a href="#keep_your_system_updated_opensuse" class="nav-link">Keeping
+                                    Your System Updated</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#gentoo" class="nav-link">Gentoo</a></li>
                 </ul>
             </div>
 
@@ -584,9 +605,85 @@
                 <hr class="divider">
 
                 <section id="opensuse">
-                    <h3>openSUSE</h3>
-                    <samp>Next Update ...</samp>
+                    <h2>openSUSE</h2>
+                    <p class="lead">openSUSE uses the Zypper package manager for handling software installation,
+                        updates, and removal.</p>
+                    <section id="zypper_basics">
+                        <h3>Zypper Basics</h3>
+                        <p>Zypper is a powerful package manager designed for openSUSE distributions.</p>
+                        <section id="update_package_database_opensuse">
+                            <h4>Update Package Database</h4>
+                            <li><code>sudo zypper refresh</code></li>
+                            <br>
+                        </section>
+                        <section id="install_packages_opensuse">
+                            <h4>Install Packages</h4>
+                            <p>To install a package, use the <code>zypper install</code> command followed by the package
+                                name:</p>
+                            <li><code>sudo zypper install [package_name]</code></li>
+                            <br>
+                        </section>
+                        <section id="remove_packages_opensuse">
+                            <h4>Remove Packages</h4>
+                            <p>To remove a package:</p>
+                            <li><code>sudo zypper remove [package_name]</code></li>
+                            <br>
+                        </section>
+                        <section id="upgrade_packages_opensuse">
+                            <h4>Upgrade Packages</h4>
+                            <p>To upgrade all installed packages:</p>
+                            <li><code>sudo zypper update</code></li>
+                            <br>
+                        </section>
+                        <section id="search_for_packages_opensuse">
+                            <h4>Search for Packages</h4>
+                            <p>To search for packages by name:</p>
+                            <li><code>zypper search [search_term]</code></li>
+                            <br>
+                        </section>
+                        <section id="show_package_information_opensuse">
+                            <h4>Show Package Information</h4>
+                            <p>To display detailed information about a package:</p>
+                            <li><code>zypper info [package_name]</code></li>
+                            <br>
+                        </section>
+                    </section>
+                    <section id="additional_zypper_commands">
+                        <h3>Additional Zypper Commands</h3>
+                        <h4>Repositories</h4>
+                        <p>To list enabled repositories:</p>
+                        <li><code>zypper repos</code></li>
+                        <br>
+                        <h4>Adding Repositories</h4>
+                        <p>To add a repository:</p>
+                        <li><code>sudo zypper addrepo [repository_url] [alias]</code></li>
+                        <br>
+                        <h4>Cleaning</h4>
+                        <p>To clean the package cache and free up space:</p>
+                        <li><code>sudo zypper clean</code></li>
+                        <br>
+                    </section>
+                    <section id="yast">
+                        <h3>YaST (Yet another Setup Tool)</h3>
+                        <p class="lead">YaST is a comprehensive configuration and management tool for openSUSE. It
+                            provides a graphical interface for package management and other system tasks.</p>
+                    </section>
+                    <section id="keep_your_system_updated_opensuse">
+                        <h3>Keeping Your System Updated</h3>
+                        <p>Regularly update your system to ensure security and stability:</p>
+                        <li><code>sudo zypper update</code></li>
+                        <br>
+                    </section>
+                    <samp>These commands should help you manage packages efficiently on your openSUSE system. Remember
+                        to use <code>sudo</code> to execute commands as a superuser when required.</samp>
                 </section>
+
+                <hr class="divider">
+
+                <secction id="gentoo">
+                    <h2>Gentoo</h2>
+                    <samp>Next Update ...</samp>
+                </secction>
 
                 <!-- HTML Structure
 		============================ -->
