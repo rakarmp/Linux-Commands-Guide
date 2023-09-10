@@ -1,5 +1,5 @@
 <div>
-   <h2>Linux Command Guide <img src="https://img.shields.io/badge/License-MIT-blue.svg" /> <img src="https://img.shields.io/badge/ultimate-guide-blue"/></h2>
+   <h2>Linux Command Guide <img src="https://img.shields.io/badge/License-MIT-blue.svg" /> <img src="https://img.shields.io/badge/ultimate-guide-blue"/> <img src="https://img.shields.io/website/https/rakarmp.github.io/Linux-Commands-Guide" /> <img src="https://img.shields.io/github/stars/rakarmp/Linux-Commands-Guide" /></h2>
    <div>
      <p>Linux Commands Guide - Your Ultimate Guide to Linux Package Management</p>
    </div>
